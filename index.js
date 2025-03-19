@@ -7,8 +7,8 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 
-// const URL = process.env.DB || "mongodb://127.0.0.1:27017/fsd13";
-const URL = "mongodb://127.0.0.1:27017/fsd13";
+const URL = process.env.DB || "mongodb://127.0.0.1:27017/fsd13";
+
 
 mongoose.connect(URL)
     .then(() => console.log("Connected to Mongoose Atlas"))
